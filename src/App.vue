@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!-- <MenuBar /> -->
+    <menu-bar></menu-bar>
+    <h1>{{ message }}</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+      inventore nisi, numquam omnis deserunt illo neque cum repellendus est
+      ducimus minus! Totam, culpa. Tempora, commodi inventore cumque odio
+      accusantium quaerat.
+    </p>
+    <!-- <the-footer></the-footer> -->
+    <TheFooter />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuBar from "./components/MenuBar"
+import TheFooter from "./components/TheFooter"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    MenuBar,
+    TheFooter
+  },
+  data() {
+    return {
+      message: "Hello Vue Router"
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
