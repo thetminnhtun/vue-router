@@ -8,19 +8,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <router-link class="nav-link" to="/">Home</router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Product</a>
+        <router-link class="nav-link" to="/product">Product</router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <router-link class="nav-link" to="/about">About</router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Profile</a>
+        <router-link class="nav-link" to="/profile">Profile</router-link>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <router-link class="nav-link" to="/login">login</router-link>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Logout</a>

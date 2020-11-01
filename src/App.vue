@@ -1,19 +1,16 @@
 <template>
   <div>
     <menu-bar></menu-bar>
-    <profile></profile>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import MenuBar from "./components/MenuBar";
-import Profile from "@/views/Profile";
-
+import MenuBar from "@/components/MenuBar";
 export default {
   name: "App",
   components: {
-    MenuBar,
-    Profile
+    MenuBar
   }
 }
 </script>
