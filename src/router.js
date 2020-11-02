@@ -3,7 +3,8 @@ import VueRouter from 'vue-router';
 import Home from "@/views/Home";
 import About from "@/views/About";
 import Login from "@/views/Login";
-import Product from "@/views/Product";
+import ProductHome from "@/views/ProductHome";
+import ProductDetail from "@/views/ProductDetail";
 import Profile from "@/views/Profile";
 
 Vue.use(VueRouter);
@@ -12,7 +13,8 @@ const routes = [
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/login', component: Login },
-    { path: '/product', component: Product },
+    { path: '/product', component: ProductHome },
+    { path: '/product/:id', component: ProductDetail },
     { path: '/profile', component: Profile },
 ];
 
