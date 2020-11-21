@@ -20,6 +20,8 @@
 
 <script>
 export default {
-
+  created() {
+    console.log('Profile Page.');
+  }
 }
 </script>
